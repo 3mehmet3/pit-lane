@@ -14,7 +14,7 @@ An F1-themed reflex game developed with vanilla JavaScript and the HTML5 Canvas 
 
 - **Mode 3: Overtake**  
   Use the DRS system by pressing SPACE inside the DRS zone and overtake the rival car without crashing.
-
+_
 ## Controls
 
 | Key | Action |

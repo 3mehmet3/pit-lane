@@ -60,8 +60,8 @@ function newRival() {
   mode3.rival.targetLane = mode3.rival.lane;
   mode3.rival.y = 180;
   mode3.rival.targetY = 180;
-  mode3.rival.moveTimer = Math.max(40, 100 - state.level * 6);
-  mode3.maxOvertakeTime = Math.max(180, 360 - state.level * 18);
+  mode3.rival.moveTimer = Math.max(60, 110 - state.level * 4);
+  mode3.maxOvertakeTime = Math.max(240, 420 - state.level * 10);
   mode3.overtakeTimer = mode3.maxOvertakeTime;
   mode3.drsActive = false;
   mode3.drsTimer = 0;
@@ -98,7 +98,7 @@ export function updateMode3() {
   mode3.spawnTimer--;
   if (mode3.spawnTimer <= 0) {
     spawnDrsZone();
-    mode3.spawnTimer = 240 + state.level * 30;
+    mode3.spawnTimer = Math.max(180, 240 - state.level * 10);
   }
   mode3.drsAvailable = false;
   for (let i = mode3.drsZones.length - 1; i >= 0; i--) {
